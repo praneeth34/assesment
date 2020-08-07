@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card layout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <style>
+      .cards {
+        margin: 0 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        font-family: sans-serif;
+      }
+      .card {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+      }
+      .card-img {
+        width: 100%;
+        display: block;
+      }
+      .card-content {
+        line-height: 1.5;
+        font-size: 0.9em;
+        padding: 15px;
+        background: #fafafa;
+      }
+      .card-content > p:first-of-type {
+        margin-top: 0;
+      }
+      .card-content > p:last-of-type {
+        margin-bottom: 0;
+      }
+      .card-extra {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        background: #eeeeee;
+        align-items: center;
+        font-size: 0.8em;
+      }
+      .card-extra i {
+        font-size: 1.8em;
+      }
+      .cart:hover {
+        background-color: rgb(27, 44, 27);
+      }
+      button {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card">
+        <img src="https://place-hold.it/400x200" class="card-img" />
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            voluptatum sequi nulla cupiditate, numquam quod neque voluptate
+            atque voluptas. Animi ea omnis quam veritatis aliquid, error eaque
+            in sit tempore.
+          </p>
+        </div>
+        <div class="card-extra">
+          <div>$21,000</div>
+          <div>
+            <a href="#" class="cart"
+              ><i class="fa fa-cart-plus" style="color: green;"></i
+              ><span style="padding: 5px;"></span
+              ><button style="background-color: green;">Add to cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://place-hold.it/400x200" class="card-img" />
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            voluptatum sequi nulla cupiditate, numquam quod neque voluptate
+            atque voluptas. Animi ea omnis quam veritatis aliquid, error eaque
+            in sit tempore.
+          </p>
+        </div>
+        <div class="card-extra">
+          <div>$21,000</div>
+          <div>
+            <a href="#" class="cart"
+              ><i class="fa fa-cart-plus" style="color: green;"></i
+              ><span style="padding: 5px;"></span
+              ><button style="background-color: green;">Add to cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://place-hold.it/400x200" class="card-img" />
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            voluptatum sequi nulla cupiditate, numquam quod neque voluptate
+            atque voluptas. Animi ea omnis quam veritatis aliquid, error eaque
+            in sit tempore.
+          </p>
+        </div>
+        <div class="card-extra">
+          <div>$21,000</div>
+          <div>
+            <a href="#" class="cart"
+              ><i class="fa fa-cart-plus" style="color: green;"></i
+              ><span style="padding: 5px;"></span
+              ><button style="background-color: green;">Add to cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://place-hold.it/400x200" class="card-img" />
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            voluptatum sequi nulla cupiditate, numquam quod neque voluptate
+            atque voluptas. Animi ea omnis quam veritatis aliquid, error eaque
+            in sit tempore.
+          </p>
+        </div>
+        <div class="card-extra">
+          <div>$21,000</div>
+          <div>
+            <a href="#" class="cart"
+              ><i class="fa fa-cart-plus" style="color: green;"></i
+              ><span style="padding: 5px;"></span
+              ><button style="background-color: green;">Add to cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://place-hold.it/400x200" class="card-img" />
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            voluptatum sequi nulla cupiditate, numquam quod neque voluptate
+            atque voluptas. Animi ea omnis quam veritatis aliquid, error eaque
+            in sit tempore.
+          </p>
+        </div>
+        <div class="card-extra">
+          <div>$21,000</div>
+          <div>
+            <a href="#" class="cart"
+              ><i class="fa fa-cart-plus" style="color: green;"></i
+              ><span style="padding: 5px;"></span
+              ><button style="background-color: green;">Add to cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://place-hold.it/400x200" class="card-img" />
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            voluptatum sequi nulla cupiditate, numquam quod neque voluptate
+            atque voluptas. Animi ea omnis quam veritatis aliquid, error eaque
+            in sit tempore.
+          </p>
+        </div>
+        <div class="card-extra">
+          <div>$21,000</div>
+          <div>
+            <a href="#" class="cart"
+              ><i class="fa fa-cart-plus" style="color: green;"></i
+              ><span style="padding: 5px;"></span
+              ><button style="background-color: green;">Add to cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://place-hold.it/400x200" class="card-img" />
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            voluptatum sequi nulla cupiditate, numquam quod neque voluptate
+            atque voluptas. Animi ea omnis quam veritatis aliquid, error eaque
+            in sit tempore.
+          </p>
+        </div>
+        <div class="card-extra">
+          <div>$21,000</div>
+          <div>
+            <a href="#" class="cart"
+              ><i class="fa fa-cart-plus" style="color: green;"></i
+              ><span style="padding: 5px;"></span
+              ><button style="background-color: green;">Add to cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://place-hold.it/400x200" class="card-img" />
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            voluptatum sequi nulla cupiditate, numquam quod neque voluptate
+            atque voluptas. Animi ea omnis quam veritatis aliquid, error eaque
+            in sit tempore.
+          </p>
+        </div>
+        <div class="card-extra">
+          <div>$21,000</div>
+          <div>
+            <a href="#" class="cart"
+              ><i class="fa fa-cart-plus" style="color: green;"></i
+              ><span style="padding: 5px;"></span
+              ><button style="background-color: green;">Add to cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

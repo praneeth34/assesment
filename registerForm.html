@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #3e3d3d;
+        font-family: sans-serif;
+      }
+      .form-wrap {
+        width: 700px;
+        background: #ffffff;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      input {
+        width: 50%;
+        border: 2px solid #aaa;
+        border-radius: 4px;
+        margin: 8px 10px;
+        outline: none;
+        padding: 8px;
+        float: inline-end;
+        box-sizing: border-box;
+        transition: 0.3s;
+      }
+      input:focus {
+        border-color: dodgerBlue;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+      }
+      select {
+        width: 50%;
+        border: 2px solid #aaa;
+        color: #aaa;
+        text-align: center;
+        border-radius: 4px;
+        margin: 8px 10px;
+        outline: none;
+        padding: 8px;
+        float: inline-end;
+        box-sizing: border-box;
+        transition: 0.3s;
+      }
+
+      label {
+        display: inline-block;
+        padding-top: 5px;
+        width: 140px;
+        text-align: left;
+      }
+
+      .inputWithIcon {
+        position: relative;
+        margin-right: 0;
+      }
+
+      .inputWithIcon i {
+        position: absolute;
+        left: 280px;
+        top: 8px;
+        padding: 9px 8px;
+        color: #aaa;
+        color: dodgerBlue;
+        transition: 0.3s;
+      }
+      .inputWithIcon.inputIconBg i {
+        background-color: #aaa;
+        color: #fff;
+        padding: 9px 4px;
+        border-radius: 4px 0 0 4px;
+      }
+    </style>
+    <title>Register form</title>
+  </head>
+  <body>
+    <div class="form-wrap">
+      <form onsubmit="sendData()">
+        <div class="inputWithIcon inputIconBg">
+          <label for="name">Full Name</label>
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+          <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            style="margin-left: 170px;"
+            required
+          />
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <label for="add1">Address Line 1</label>
+          <i class="fa fa-address-book-o fa-lg fa-fw" aria-hidden="true"></i>
+          <input
+            type="text"
+            id="add1"
+            placeholder="Address Line 1"
+            style="margin-left: 170px;"
+            required
+          />
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <label for="add2">Address Line 2</label>
+          <i class="fa fa-address-book-o fa-lg fa-fw" aria-hidden="true"></i>
+          <input
+            type="text"
+            id="add2"
+            placeholder="Address Line 2"
+            style="margin-left: 170px;"
+            required
+          />
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <label for="city">City</label>
+          <i class="fa fa-building-o fa-lg fa-fw" aria-hidden="true"></i>
+          <input
+            type="text"
+            id="city"
+            placeholder="City"
+            style="margin-left: 170px;"
+            required
+          />
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <label for="state">State/Province/Region</label>
+          <i class="fa fa-map-marker fa-lg fa-fw" aria-hidden="true"></i>
+          <input
+            type="text"
+            id="state"
+            placeholder="State/Province/Region"
+            style="margin-left: 170px;"
+            required
+          />
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <label for="pin">Postal Code/ZIP</label>
+          <i class="fa fa-envelope-open-o fa-lg fa-fw" aria-hidden="true"></i>
+          <input
+            type="number"
+            id="pin"
+            placeholder="Postal Code/ZIP"
+            style="margin-left: 170px;"
+            required
+          />
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <label for="country">Country</label>
+          <i class="fa fa-globe fa-lg fa-fw" aria-hidden="true"></i>
+          <select name="state" id="state" style="margin-left: 170px;">
+            <option value="IN" style="text-align: center;">INDIA</option>
+            <option value="US">UNITED STATES</option>
+            <option value="EU">ENGLAND</option>
+          </select>
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <label for="email">Email</label>
+          <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            style="margin-left: 170px;"
+          />
+        </div>
+        <div class="inputWithIcon inputIconBg">
+          <label for="phone">Phone Number</label>
+          <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+          <input
+            type="number"
+            id="phone"
+            placeholder="Phone Number"
+            style="margin-left: 170px;"
+          />
+        </div>
+        <input type="submit" value="Submit" style="margin-left: 25%;" />
+      </form>
+    </div>
+    <script>
+      function sendData() {
+        alert("Thank you .. Success!!");
+      }
+    </script>
+  </body>
+</html>
